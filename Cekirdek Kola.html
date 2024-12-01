@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cekirdek Kola</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf2e9;
+            color: #333;
+        }
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffccbc;
+            padding: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #ff5722;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .button {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #e64a19;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffccbc;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cekirdek Kola</h1>
+        <p>Relax, chat, and enjoy some sunflower seeds and cola!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#chat">Chat</a>
+        <a href="#shop">Shop</a>
+    </nav>
+    <div id="home" class="content">
+        <h2>Welcome to Cekirdek Kola</h2>
+        <p>Connect with random people and enjoy a casual chat while virtually enjoying sunflower seeds and cola.</p>
+        <button class="button" onclick="navigateTo('chat')">Start Chatting</button>
+    </div>
+    <div id="chat" class="content" style="display: none;">
+        <h2>Chat Room</h2>
+        <div id="chatBox" style="border: 1px solid #ccc; height: 300px; overflow-y: scroll; margin: 20px 0; padding: 10px;">
+            <p><strong>System:</strong> Welcome to the chat room!</p>
+        </div>
+        <input type="text" id="chatInput" placeholder="Type your message..." style="width: 80%; padding: 10px;">
+        <button class="button" onclick="sendMessage()">Send</button>
+    </div>
+    <div id="shop" class="content" style="display: none;">
+        <h2>Shop</h2>
+        <p>Upgrade your experience with premium colas and sunflower seeds!</p>
+        <ul style="list-style: none; padding: 0;">
+            <li>🍹 Cola - 10 Coins</li>
+            <li>🌻 Sunflower Seeds - 5 Coins</li>
+            <li>✨ Golden Cola - 50 Coins</li>
+        </ul>
+        <button class="button">Buy Coins</button>
+    </div>
+    <footer>
+        <p>&copy; 2024 Cekirdek Kola. All rights reserved.</p>
+    </
